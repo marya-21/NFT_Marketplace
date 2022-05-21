@@ -25,7 +25,10 @@ function App() {
   if (!loaded) return null;
   return (
     <NavigationContainer theme={theme}>
-      <Stack.Navigator screenOptions={{ headerShow: false }}>
+      <Stack.Navigator
+        screenOptions={{ headerShow: false }}
+        initialRouteName="Home"
+      >
         <Stack.Screen name="Home" component={Home} />
         <Stack.Screen name="Details" component={Details} />
       </Stack.Navigator>
